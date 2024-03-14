@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Snap's Landing Page</title>
+
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Verwendung FontAwesome -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/24c4ff4fd2.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <header id="header-main">
+        <button id="hamburger-menu-button" class="mobile-menu-btn" aria-expanded="false">
+            <i id="hamburger-menu" class="fa-solid fa-bars"></i>
+            <i id="close-icon" class="fa-solid fa-xmark" style="display: none"></i>
+        </button>
+        <nav id="header-left">
+            <a id="logo" href="#">
+                <img alt="snap's logo" src="images/logo.svg">
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <div class=dropdown-toggle>
+                        <button id="features-dropdown-toggle" aria-label="features-dropdown" aria-expanded="false">
+                            Features
+                        <img id="icon-arrow-up-features" class="d-none" alt="icon arrow up" src="images/icon-arrow-up.svg">
+                        <img id="icon-arrow-down-features" alt="icon arrow down" src="images/icon-arrow-down.svg">
+                        </button>
+                    </div>
+                    <ul id="features-dropdown" class="dropdown">
+                        <li>
+                            <img alt="todo icon" src="images/icon-todo.svg">
+                            <a href="">Todo List</a>
+                        </li>
+                        <li>
+                            <img alt="icon calendar" src="images/icon-calendar.svg">
+                            <a href="#">Calendar</a>
+                        </li>
+                        <li>
+                            <img alt="icon reminders" src="images/icon-reminders.svg">
+                            <a href="#">Reminders</a>
+                        </li>
+                        <li>
+                            <img alt="icon planning" src="images/icon-planning.svg">
+                            <a href="#">Planning</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="dropdown-toggle">
+                        <button id="company-dropdown-toggle" aria-label="company-dropdown" aria-expanded="false">
+                            Company
+                        <img id="icon-arrow-up-company" class="d-none" alt="icon arrow up" src="images/icon-arrow-up.svg">
+                        <img id="icon-arrow-down-company" alt="icon arrow down" src="images/icon-arrow-down.svg">
+                        </button>
+                    </div>
+                    <ul id="company-dropdown" class="dropdown">
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="single-link">
+                    <a href="#">Careers</a>
+                </li>
+                <li class="single-link">
+                    <a href="#">About</a>
+                </li>
+                <li id="right-side" class="single-link">
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a id="register" href="#">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid-container">
+        <div class="d-flex">
+            <h1>Make remote work</h1>
+            <p>
+                Get your team in sync, no matter your location.<br>
+                Streamline processes, create team rituals, and<br>
+                watch productivity soar.
+            </p>
+            <a id="learn-more" href="#">
+                Learn more
+            </a>
+            <div class="container">
+                <img src="images/client-databiz.svg" alt="client's illustration pictures">
+                <img src="images/client-audiophile.svg" alt="client's illustration pictures">
+                <img src="images/client-meet.svg" alt="client's illustration pictures">
+                <img src="images/client-maker.svg" alt="client's illustration pictures">
+            </div>
+        </div>
+        <div>
+            <img class="grid-image" src="images/image-hero-desktop.png" alt="illustration picture">
+            <img class="grid-image d-none" src="images/image-hero-mobile.png" alt="illustration picture mobile">
+        </div>
+    </main>
+</body>
+</html>
